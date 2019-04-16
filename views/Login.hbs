@@ -1,0 +1,43 @@
+<header class="masthead" style="background-image: url('/img/contact-bg.jpg')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="page-heading">
+          <h1>Login</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <form action="/user/login" method="POST"  >
+       <div class="control-group">
+          <div class="form-group floating-label-form-group controls">
+            <label>Email</label>
+            <input type="text" name="email" placeholder="email" class="form-control">
+          </div>
+        </div>
+       
+        <div class="control-group">
+          <div class="form-group floating-label-form-group controls">
+            <label>Password</label>
+            <input type="password" name="password" placeholder="password" class="form-control">
+          </div>
+        </div>
+       
+       
+        <div class="form-group my-4 text-center">
+          <button class="btn btn-primary">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.js"></script>
+<script>
+  $('#content').summernote();
+</script>
